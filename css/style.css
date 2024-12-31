@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin: 0;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.menu-carousel {
+  margin-top: 20px;
+}
+
+.menu-icon {
+  color: #b4bc7c ;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
+  color: #acbd81;
+}
+
+.carousel-inner p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Hace los controles visibles en fondos oscuros */
+}
+
+.menu-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.menu-details {
+  flex-grow: 1;
+}
+
+.menu-details h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.menu-details p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b4bc7c;
+}
+
+.footer {
+  background-color: #222; /* Fondo oscuro y elegante */
+  color: #bbb; /* Color de texto sutil */
+  font-size: 0.95rem; /* Tamaño profesional del texto */
+  border-top: 1px solid #444; /* Línea superior para destacar el footer */
+}
+
+.footer a {
+  color: #bbb; /* Color del texto del enlace */
+  transition: color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.footer a:hover {
+  color: #f8c471; /* Color en hover acorde al diseño */
+}
+
+.footer i {
+  color: #f8c471; /* Color del icono */
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #e67e22; /* Efecto hover del icono */
+}

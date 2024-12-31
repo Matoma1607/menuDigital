@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Digital</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header bg-dark text-white">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand mx-auto mt-4" href="#">Menú Digital</a>
+        </div>
+      </nav>
+      <div class="text-center py-4">
+        <p>Restaurante - Bar - Barra de cócteles</p>
+      </div>
+    </header>
+
+    <main>
+      <div
+        id="menuCarousel"
+        class="carousel slide menu-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center">
+              <i
+                class="fas fa-utensils fa-3x menu-icon"
+                onclick="scrollToSection('seccion1')"
+              ></i>
+              <p>Entradas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <i
+                class="fas fa-drumstick-bite fa-3x menu-icon"
+                onclick="scrollToSection('seccion2')"
+              ></i>
+              <p>Platos principales</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <i
+                class="fas fa-ice-cream fa-3x menu-icon"
+                onclick="scrollToSection('seccion3')"
+              ></i>
+              <p>Postres</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <i
+                class="fas fa-wine-glass-alt fa-3x menu-icon"
+                onclick="scrollToSection('seccion4')"
+              ></i>
+              <p>Bebidas</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#menuCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#menuCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <section id="seccion1" class="menu-section">
+        <h1>Entradas</h1>
+        <div class="menu-item">
+          <img
+            src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg"
+            alt="Miso Salmón glaseado"
+            class="menu-img"
+          />
+          <div class="menu-details">
+            <h2>Miso Salmón Glaseado</h2>
+            <p>Miso de calidad con mantequilla.</p>
+            <span class="price">$ 22.00</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion2" class="menu-section">
+        <h1>Platos principales</h1>
+        <div class="menu-item">
+          <img
+            src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+            alt="Curry de batata"
+            class="menu-img"
+          />
+          <div class="menu-details">
+            <h2>Curry de Batata</h2>
+            <p>Vegetariano con calabaza.</p>
+            <span class="price">$ 14.00</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion3" class="menu-section">
+        <h1>Postres</h1>
+        <div class="menu-item">
+          <img
+            src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
+            alt="Tarta de chocolate"
+            class="menu-img"
+          />
+          <div class="menu-details">
+            <h2>Tarta de Chocolate</h2>
+            <p>Chocolate belga con frambuesas.</p>
+            <span class="price">$ 8.00</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion4" class="menu-section">
+        <h1>Bebidas</h1>
+        <div class="menu-item">
+          <img
+            src="https://images.pexels.com/photos/3323680/pexels-photo-3323680.jpeg"
+            alt="Cóctel especial"
+            class="menu-img"
+          />
+          <div class="menu-details">
+            <h2>Cóctel Especial</h2>
+            <p>Un toque de frescura en cada sorbo.</p>
+            <span class="price">$ 10.00</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <p class="mb-2 mb-md-0 text-center text-md-start">
+          &copy; 2025 Todos los derechos reservados.
+        </p>
+        <a
+          href="https://www.instagram.com/tu_cuenta/"
+          target="_blank"
+          class="d-flex align-items-center text-white text-decoration-none"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram me-2" style="font-size: 1.2rem"></i>
+          <span>https://www.instagram.com/smatias_n/</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
