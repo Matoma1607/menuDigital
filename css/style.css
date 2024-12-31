@@ -50,7 +50,7 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1); /* Hace los controles visibles en fondos oscuros */
+  filter: invert(1); 
 }
 
 .menu-section {
@@ -96,27 +96,55 @@ body {
   color: #b4bc7c;
 }
 
+/* Botón para volver arriba */
+#scrollTopButton {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #b4bc7c; 
+  color: white;
+  border: none;
+  border-radius: 50%; 
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollTopButton:hover {
+  background-color: rgba(0, 0, 0, 0.9); 
+  transform: scale(1.1); 
+}
+
+#scrollTopButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+
 .footer {
-  background-color: #222; /* Fondo oscuro y elegante */
-  color: #bbb; /* Color de texto sutil */
-  font-size: 0.95rem; /* Tamaño profesional del texto */
-  border-top: 1px solid #444; /* Línea superior para destacar el footer */
+  background-color: #222; 
+  color: #bbb; 
+  font-size: 0.95rem; 
+  border-top: 1px solid #444; 
 }
 
 .footer a {
-  color: #bbb; /* Color del texto del enlace */
-  transition: color 0.3s ease; /* Animación suave al pasar el cursor */
+  color: #bbb; 
+  transition: color 0.3s ease; 
 }
 
 .footer a:hover {
-  color: #f8c471; /* Color en hover acorde al diseño */
+  color: #f8c471; 
 }
 
 .footer i {
-  color: #f8c471; /* Color del icono */
+  color: #f8c471; 
   transition: color 0.3s ease;
 }
 
 .footer i:hover {
-  color: #e67e22; /* Efecto hover del icono */
+  color: #e67e22; 
 }

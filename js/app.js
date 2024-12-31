@@ -47,3 +47,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Seleccionamos el botón
+const scrollTopButton = document.getElementById('scrollTopButton');
+
+// Mostrar el botón cuando se haga scroll hacia abajo
+window.onscroll = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopButton.style.display = 'block';
+  } else {
+    scrollTopButton.style.display = 'none';
+  }
+};
+
+// Función para volver arriba
+scrollTopButton.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
